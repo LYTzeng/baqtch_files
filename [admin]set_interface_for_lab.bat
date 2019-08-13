@@ -1,3 +1,4 @@
+@echo off
 netsh int ip set address 18 static 172.30.0.238 255.255.255.0 172.30.0.254
 netsh wlan connect ssid=ZeroneWLAN name=ZeroneWLAN
 ping -n 1 172.30.0.254 | find "TTL=" >nul
